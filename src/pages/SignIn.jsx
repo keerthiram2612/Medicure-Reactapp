@@ -14,7 +14,7 @@ export default function SignIn() {
         <form >
           <input className=' input w-full mt-6' type="email" id="email" value="email"/>
           <input className='input w-full mt-6 'type="pass" id="pass "/>
-          <button className="login">Login</button>
+          <button className="login">SignIn</button>
         </form>
       </div>
       
