@@ -26,23 +26,7 @@ body{
 
 
 @media (max-width: 650px){
-  .list{
-    margin-right: 3px;
-    margin-top: -4px;
-  }
-  .list li{
-    font-size: 15px;
-  }
-  .logo{
-    height: 30px;
-    margin-left: -7px;
-    margin-top: 0px;
-  }
-  .head{
-    padding: 4px 0;
-    margin-left: 55px;
-    transform: translateY(5px);
-  }
+  
   .img{
     margin-top: -40px;
   }
@@ -59,4 +43,29 @@ body{
 
   }
 
+}
+@media (max-width:350px){
+    .input{
+        transform: translateX(-0px);
+
+    }
+    .login{
+       margin-left: 120px;
+       margin-top: -40px;
+    }
+    .list li{
+       margin-left: -20px;
+       font-size: 12px;
+
+    }
+    .head{
+        margin-left: 0px;
+        margin-bottom: -30px;
+        visibility: hidden;
+
+
+    }
+    .logo{
+        
+    }
 }

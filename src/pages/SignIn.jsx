@@ -12,7 +12,7 @@ export default function SignIn() {
       </div>
       <div className='w-full md:w-[67%] lg:w-[40%] lg:ml-20 -mb-6'>
         <form >
-          <input className=' input w-full mt-6' type="email" id="email" value="email"/>
+          <input className='text-center  input w-full mt-6' type="email" id="email" value="email"/>
           <input className='input w-full mt-6 'type="pass" id="pass "/>
           <button className="login">SignIn</button>
         </form>

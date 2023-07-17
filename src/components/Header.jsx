@@ -12,12 +12,12 @@ export default function Header() {
     <div className='bg-white border-b shadow-sm sticky top-0 z-50 '>
         <header className='flex justify-between items-center px-3 max-w-8xl max-auto'>
             <div>
-                <img className="logo h-10 w-20  cursor-pointer px-0 -mt-5 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0-rwvCYTS4D029xUrilLLKk7OHY0SmS3knQ&usqp=CAU" 
+                <img className="logo h-10 w-20  cursor-pointer px-0 -mt-5 items-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0-rwvCYTS4D029xUrilLLKk7OHY0SmS3knQ&usqp=CAU" 
                 alt="logo" onClick={()=>navigate("/")}/>
-                <h1 className={`head ml-20 -mt-11 ml-16 text-lg font-semibold cursor-pointer text-green-600`}>Medicure</h1>
+                <h1 className={`head ml-20 -mt-11 ml-16 text-lg font-semibold cursor-pointer text-green-600 items-center -mb-2px`}>Medicure</h1>
             </div>
-            <div className='flex '>
-                <ul className='list flex space-x-5 mr-2'>
+            <div className='flex md:w-[67%] lg:w-[40%] items-center'>
+                <ul className='list flex space-x-5 items-center '>
                     <li className={`cursor-pointer  py-3 text-sm font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/")&& "text-black border-b-green-600"}`}
                     onClick={()=>navigate("/")}>Home</li>
                     <li className={` cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/products")&& "text-black border-b-green-600"}`}
