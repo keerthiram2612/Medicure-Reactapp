@@ -4,7 +4,6 @@ import Products from "./pages/Products"
 import SignIn from "./pages/SignIn";
 import Services from "./pages/Services";
 import SignUp from "./pages/SignUp";
-import Profile from "./pages/Profile";
 import ForgotPassword from './pages/ForgotPassword';
 import Header from './components/Header';
 function App() {
@@ -14,7 +13,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/"element={<Home/>}/>
-        <Route path="/profile"element={<Profile/>}/>
         <Route path="/products"element={<Products/>}/>
         <Route path="/sign-in"element={<SignIn/>}/>
         <Route path="/sign-up"element={<SignUp/>}/>
