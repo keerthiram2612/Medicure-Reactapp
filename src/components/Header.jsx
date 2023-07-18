@@ -25,7 +25,7 @@ export default function Header() {
                     <li  className={`cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/resources")&& "text-black border-b-green-600"}`}
                     onClick={()=>navigate("/resources")}>Resources</li>
                     <li  className={`cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/sign-in")&& "text-black border-b-green-600"}`}
-                    onClick={()=>navigate("/sign-in")}>Sign in</li>
+                    onClick={()=>navigate("/login")}>Login</li>
                 </ul>
             </div>
         </header>
