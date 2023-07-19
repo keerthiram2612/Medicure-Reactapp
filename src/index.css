@@ -41,8 +41,12 @@ body{
     margin-left: -130px;
     transform: translateY(50px);
 
+  }.head{
+    visibility: hidden;
   }
-
+  .list li{
+    margin-left: -40px;
+  }
 }
 @media (max-width:350px){
     .input{
@@ -54,7 +58,7 @@ body{
        margin-top: -40px;
     }
     .list li{
-       margin-left: -20px;
+       margin-left: -30px;
        font-size: 12px;
 
     }

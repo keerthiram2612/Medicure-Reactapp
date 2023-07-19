@@ -14,17 +14,17 @@ export default function Header() {
             <div>
                 <img className="logo h-10 w-20  cursor-pointer px-0 -mt-5 items-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0-rwvCYTS4D029xUrilLLKk7OHY0SmS3knQ&usqp=CAU" 
                 alt="logo" onClick={()=>navigate("/")}/>
-                <h1 className={`head ml-20 -mt-11 ml-16 text-lg font-semibold cursor-pointer text-green-600 items-center -mb-2px`}>Medicure</h1>
+                <h1 className={`head ml-20 -mt-11  text-lg font-semibold cursor-pointer text-green-600 items-center -mb-2px`}>Medicure</h1>
             </div>
-            <div className='flex md:w-[67%] lg:w-[40%] items-center'>
+            <div className='flex'>
                 <ul className='list flex space-x-5 items-center '>
-                    <li className={`cursor-pointer  py-3 text-sm font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/")&& "text-black border-b-green-600"}`}
+                    <li className={`cursor-pointer py-3  text-sm font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/")&& "text-black border-b-blue-600"}`}
                     onClick={()=>navigate("/")}>Home</li>
-                    <li className={` cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/products")&& "text-black border-b-green-600"}`}
+                    <li className={` cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/products")&& "text-black border-b-blue-600"}`}
                     onClick={()=>navigate("/products")}>Products</li>
-                    <li  className={`cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/resources")&& "text-black border-b-green-600"}`}
+                    <li  className={`cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/resources")&& "text-black border-b-blue-600"}`}
                     onClick={()=>navigate("/resources")}>Resources</li>
-                    <li  className={`cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/sign-in")&& "text-black border-b-green-600"}`}
+                    <li  className={`cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/sign-in")&& "text-black border-b-blue-600"}`}
                     onClick={()=>navigate("/login")}>Login</li>
                 </ul>
             </div>
