@@ -18,8 +18,10 @@ const navigate = useNavigate();
    
   return (
     <div>
-     home
-     
+
+      <p>
+        <button onClick={logoutHandler}>Logout</button>
+      </p>
     </div>
   )
 }
