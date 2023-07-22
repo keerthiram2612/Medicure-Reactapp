@@ -5,20 +5,25 @@ import { passwordValidator } from "../components/regexValidator"
 export default function Login() {
  const[input,setInput]=useState({email:'',password:''})
 
- const [errorMessage,seterrorMessage]=useState('')
+ const [errorMessage,seterrorMessage]=useState('');
+ const [successMessage,setsuccessMessage]=useState('');
 
  const handleChange= (e)=>{
   setInput({...input,[e.target.name]:e.target.value})
- }
+ };
+
  const formSubmitter = (e)=>{
-  e.preventDefault()
+  e.preventDefault();
+setsuccessMessage('')
  if(!emailValidator(input.email))
- return seterrorMessage('Please enter valid email id')
+ return seterrorMessage('Please enter valid email id');
 
  if(!passwordValidator(input.password))
  return seterrorMessage('Password should have minimum 8 character with the combination od uppercase, lowercase , numbers and specialcharacters')
-  
- }
+    
+ setsuccessMessage('successfully validated')
+
+ };
 
   return(
    <div>
@@ -33,12 +38,15 @@ export default function Login() {
             Log in
           </span>
           {errorMessage.length > 0 && <div style ={{marginBottom:'10px',color:'red'}}>{errorMessage}</div>}
+
+          {successMessage.length > 0 && <div style ={{marginBottom:'10px',color:'green'}}>{successMessage}</div>}
+
           <div className="wrap-input100 validate-input" data-validate="Enter username">
             <input className="input100" type="text" name="email" placeholder="Username" onChange={handleChange} />
             <span className="focus-input100" data-placeholder="" />
           </div>
           <div className="wrap-input100 validate-input" data-validate="Enter password">
-            <input className="input100" type="password" name="password" placeholder="Password" onChange={handleChange} />
+            <input className="input100" type="text" name="password" placeholder="Password" onChange={handleChange} />
             <span className="focus-input100" data-placeholder="" />
           </div>
           <div className="contact100-form-checkbox">
