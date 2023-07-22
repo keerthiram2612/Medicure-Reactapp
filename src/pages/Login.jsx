@@ -1,8 +1,11 @@
 import React, { useState } from "react"
 import { emailValidator } from "../components/regexValidator"
 import { passwordValidator } from "../components/regexValidator"
+import {useNavigate} from "react-router-dom"
 
 export default function Login() {
+  const navigate = useNavigate();
+
  const[input,setInput]=useState({email:'',password:''})
 
  const [errorMessage,seterrorMessage]=useState('');
@@ -12,6 +15,10 @@ export default function Login() {
   setInput({...input,[e.target.name]:e.target.value})
  };
 
+ React.useEffect(()=>{
+  if(localStorage.getItem('auth')) navigate("/")
+   
+ },[])
  const formSubmitter = (e)=>{
   e.preventDefault();
 setsuccessMessage('')
@@ -21,9 +28,14 @@ setsuccessMessage('')
  if(!passwordValidator(input.password))
  return seterrorMessage('Password should have minimum 8 character with the combination od uppercase, lowercase , numbers and specialcharacters')
     
- setsuccessMessage('successfully validated')
+// setsuccessMessage('successfully validated')
+if(input.email !== 'admin@a.com' || input.password !== 'Password@1') return seterrorMessage('Invalid email or password');
+    
+   localStorage.setItem('auth', true)
+		navigate('/');
+		
 
- };
+	};
 
  
   return(
