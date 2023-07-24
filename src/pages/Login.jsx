@@ -29,8 +29,12 @@ setsuccessMessage('')
  return seterrorMessage('Password should have minimum 8 character with the combination od uppercase, lowercase , numbers and specialcharacters')
     
 // setsuccessMessage('successfully validated')
-if(input.email !== 'keerthiram2612.@gmail.com' || input.password !== 'Password@1') return seterrorMessage('Invalid email or password');
-    
+
+const isAuthenticated = true ;
+
+if (!isAuthenticated)
+return seterrorMessage('Invalid email or password');
+
    localStorage.setItem('auth', true)
 		navigate('/');
 		
