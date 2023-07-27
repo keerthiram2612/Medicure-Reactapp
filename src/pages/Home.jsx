@@ -17,8 +17,8 @@ const navigate = useNavigate();
   }
    
   return (
-    <div>
-
+    <div className='container'>
+      <h1 className='home-con'>MediCure Applications which creates a knowledge about Ventilation and the uses.</h1>
       <p>
         <button onClick={logoutHandler}>Logout</button>
       </p>
