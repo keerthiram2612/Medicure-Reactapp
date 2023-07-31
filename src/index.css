@@ -22,7 +22,9 @@ body{
     border-radius: 5px;
     
 }
-
+.container{
+  height: 100vh;
+}
 
 
 @media (max-width: 700px){
@@ -50,8 +52,17 @@ body{
   .content{
     margin-top: 50px;
     transform: translateX(-85%);
-    background-color: white;
+    margin-right: -20px;
+    transform: translateX(-480px);
+    
+    
   }
+ .home-con{
+  width: 500px;
+  margin:10px;
+ }
+
+  
 }
 @media (max-width:350px){
     .input{
@@ -77,6 +88,7 @@ body{
     .logo{
         
     }
+    
 }
 .home-con{
   justify-content: center;
@@ -84,8 +96,6 @@ body{
   transform: translateY(110px);
   font-size: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  min-width: 350px;
-  width: 1200px;
   height: 200px;
   background-color: aqua;
   text-align: center;
