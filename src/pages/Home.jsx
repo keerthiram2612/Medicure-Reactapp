@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import {useNavigate} from "react-router-dom"
+import Slider from './Slider';
+
 
 export default function Home() {
 const [logout,setLogout] = useState(false);
@@ -27,6 +29,12 @@ const navigate = useNavigate();
       <p>
         <button onClick={logoutHandler}>Logout</button>
       </p>
+      <div className='cont-img'>
+        <p>ventilation used during the panademic situations</p>
+
+         <Slider/>
+      </div>
     </div>
   )
 }
+

@@ -9,12 +9,14 @@ import Login from './pages/Login';
 import Listing from './pages/Listing';
 
 
+
 function App() {
   
   return (
     < >
      <Router>
       <Header />
+
       <Routes>
         <Route path="/"element={<Home/>}/>
         <Route path="/products"element={<Products/>}/>
