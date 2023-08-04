@@ -4,6 +4,7 @@
 
 body{
     background-color: rgb(240, 250, 254);
+    
 }
 
 .login{
@@ -67,6 +68,9 @@ body{
   justify-content: center;
   display: flex;
   text-align: center;
+  height: 300px;
+  
+
  }
   
 }
@@ -132,9 +136,14 @@ body{
   
 }
 .cont-img{
-  
+
 }
 .swiper{
   right: -0%;
   margin-top: 10%;
+  border-radius: 20px;
+  border: 
+}
+.swiper img{
+ transform: translateX(20%);
 }
