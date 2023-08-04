@@ -4,6 +4,9 @@ import Slider from './Slider';
 
 
 export default function Home() {
+const gotoProduct=()=>{
+ navigate('/product');
+}
 const [logout,setLogout] = useState(false);
 const navigate = useNavigate();
 
@@ -29,11 +32,14 @@ const navigate = useNavigate();
       <p>
         <button onClick={logoutHandler}>Logout</button>
       </p>
+  
+      <button onClick={gotoProduct} className = "btn">next</button>
       <div className='cont-img'>
         <p>ventilation used during the panademic situations</p>
-
          <Slider/>
+         
       </div>
+      
     </div>
   )
 }
