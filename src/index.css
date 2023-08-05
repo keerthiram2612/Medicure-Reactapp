@@ -397,10 +397,9 @@ h1 {
 }
 
 
-.resources-container p {
+.resources-container .resource-head{
   font-size: 18px;
   margin-bottom: 20px;
-  border-bottom: 2px  solid blue;
   transition: font-size 0.4s ease-in-out;
 }
 
@@ -440,6 +439,29 @@ li {
  .button1{
   transform: translateX(-650%);
  }
+ .button2{
+  transform: translateX(250%);
+ }
+ .health {
+  transform:translateX(-10%);
+ }
+ .contentWHO {
+   transform:translate(150%,-40%);
+   height: 30px;
+   margin-left:10px;
+   font-size:12px;
+   text-align:center;
+   margin-top: -30px;
+   margin-right: 40px;
+   
+ }
+ .resources-container .contentWHO {
+   margin-top: 80px;
+   height: 90px;
+   position:fixed;
+ }
+ 
+ 
 }
 .corona-img{
   margin-left: -350px;
@@ -452,6 +474,23 @@ a {
   margin-top: 40px;
   
 }
+.source1{
+  float:left;
+  margin-top: 70px;
+ 
+}
+.contentWHO{
+  margin-left: -1180px;
+  margin-top: 160px;
+  text-decoration:none;
+  background-color:lightblue;
+  width: 680px;
+  height: 200px;
+  text-align:center;
+  align-items:center;
+  font-size: 17px;
+
+}
 
 a:hover {
   text-decoration: underline;
@@ -463,4 +502,12 @@ a:hover {
   background-color: lightblue;
   border-radius: 10px;
   margin-left: 900px;
+}
+.button2{
+  width: 90px;
+  height: 60px;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-left: -200px;
+  margin-top: -140px;
 }
