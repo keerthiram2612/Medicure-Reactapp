@@ -95,11 +95,12 @@ body{
    transform:translateY(-20%);
  }
  .resource{
+  border:sticky;
   height:100vh;
   display:flex;
   transform:translateX(-30%);
   width: 900px;
-  height: 200px;
+  height: 300px;
    margin-right: 20px;
   align-items:center;
   text-align:center;
@@ -108,17 +109,23 @@ body{
     purple 20%,
     orange 80%
 );;
-position:fixed;
+position: fixed;
 
  
  }
+ .container-resource p{
+  transform:translateY(-1500%);
+ }
 
  
- .speech{
-  transform: translate(-40% ,-100%);
+ .speech {
+  transform: translate(-50% ,-100%);
  }
  .image-res img{
   visibility:hidden;
+ }
+ .resource p{
+
  }
  
 }
