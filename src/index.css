@@ -60,6 +60,11 @@ body{
     
     
   }
+  .fa-microphone{
+     margin-top: -30px;
+     
+  }
+
  .home-con{
   width: 500px;
   margin:-40px;
@@ -89,21 +94,30 @@ body{
  .cont-img{
    transform:translateY(-20%);
  }
- .speech{
-  transform: translateX(7%);
+ .resource{
+  height:100vh;
+  display:flex;
+  transform:translateX(-30%);
+  width: 800px;
+  height: 200px;
+   margin-right: 20px;
+  align-items:center;
+  text-align:center;
+  background: linear-gradient(
+    135deg,
+    purple 20%,
+    orange 80%
+);;
+position:fixed;
+ 
  }
- .container-resource{
-  transform: translateX(-150%);
- }
- .resource button{
-   transform: translateX(-40%);
 
- }
+ 
  .speech{
-  margin-left: -230px;
+  transform: translate(-40% ,-100%);
  }
- .container-resource p{
-  margin: 10px;
+ .image-res img{
+  visibility:hidden;
  }
  
 }
@@ -232,18 +246,32 @@ text-decoration: none;
 
 
 }
+.image-res{
+  margin-top: -250px;
+  margin-left: -135px;
+
+
+}
+.image-res img{
+  border-radius: 10px;
+}
 .resource{
-   height:100vh;
    margin:0;
-   display: flex;
+  display: flex;
    justify-content:center;
    align-items:center;
-   border-radius: 10%;
-   background-color: lightblue;
+   
+   background: linear-gradient(
+    135deg,
+    purple 20%,
+    orange 80%
+);;
+   width: -600px;
+   height: 700px;
    margin-left: 250px;
    margin-right: 250px;
    margin-bottom: 250px;
-   margin-top: 250px;
+   margin-top: -10px;
    
 }
 .resource button{
@@ -254,8 +282,8 @@ text-decoration: none;
 }
 .speech{
     display:flex;
-    margin-top: -60px;
-    margin-right: -260px;
+    margin-top: 90px;
+    margin-right: -360px;
 
 }
 .micro{
@@ -331,9 +359,12 @@ text-decoration: none;
   font-family: sans-serif;
   text-decoration: underline;
   text-transform: uppercase;
-  transform:translateX(220%);
+  margin-left: 190%;
   white-space: nowrap;
   margin-bottom: 20px;
+  color: black;
+  margin-right: -40px;
+  margin-bottom: 40px;
   
 
 }

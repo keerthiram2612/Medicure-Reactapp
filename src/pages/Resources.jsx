@@ -38,9 +38,12 @@ export default function Features() {
         <button className="btn3"onClick={handleClearText}>Clear</button>
       </div>
       <div className='container-resource'>
-        <p>Listening: {isListening ? 'ON' : 'OFF'}</p>
+        <p className='content-res'>Listening: {isListening ? 'ON' : 'OFF'}</p>
         <p className='content-res'>Recognized Text: {recognizedText}</p>
         <p></p>
+      </div>
+      <div className='image-res'>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutrOrCT5WjZrGr1kIGEVi0-N3GmmigQyNig&usqp=CAU" alt="" />
       </div>
     </div>
   )
