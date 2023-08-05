@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Login from './pages/Login';
 import Resources from './pages/Resources';
 import Logout from './pages/Logout';
+import Health from './pages/Health';
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path = "/resources"element={<Resources/>}/>
         <Route path = "/logout"element={<Logout/>}/>
         <Route path="/forgot-password"element={<ForgotPassword/>}/>
+        <Route path = "/health"element={<Health/>}/>
       </Routes>
      </Router>
     

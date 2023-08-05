@@ -50,7 +50,7 @@ body{
     visibility: hidden;
   }
   .list li{
-    margin-left: -40px;
+    margin-left: -70px;
   }
   .content{
     margin-top: 50px;
@@ -115,6 +115,7 @@ position: fixed;
  }
  .container-resource p{
   transform:translateY(-1500%);
+  
  }
 
  
@@ -188,6 +189,7 @@ position: fixed;
   
 
 }
+
 .content{
   width: 600px;
   height: 200px;
@@ -375,4 +377,90 @@ text-decoration: none;
   margin-bottom: 40px;
   
 
+}
+.resources-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+ 
+  
+
+}
+.header-res{
+  
+}
+
+
+.resources-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 2px  solid blue;
+  transition: font-size 0.4s ease-in-out;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 30px;
+}
+
+li {
+  margin-bottom: 10px;
+  display:flex;
+  white-space:nowrap;
+}
+.corona-img img{
+  margin-top: 120px;
+  padding: 0 10px;
+  
+ 
+}
+.resources-container img{
+   border-radius: 6px;
+}
+
+@media (max-width:650px){
+ li {
+   flex-direction: column;
+ }
+ .corona-img img{
+  margin-left: 380px;
+  margin-top: -10px;
+  padding: 0 2px;
+ }
+ a{
+  transform: translateX(50%);
+  margin-bottom: 30px;
+ }
+ .button1{
+  transform: translateX(-650%);
+ }
+}
+.corona-img{
+  margin-left: -350px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 60px;
+  margin-top: 40px;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button1{
+  width: 90px;
+  height: 60px;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-left: 900px;
 }
