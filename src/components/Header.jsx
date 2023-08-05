@@ -24,10 +24,10 @@ export default function Header() {
                     onClick={()=>navigate("/products")}>Products</li>
                     <li  className={`cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/resources")&& "text-black border-b-blue-600"}`}
                     onClick={()=>navigate("/resources")}>Resources</li>
-                    <li  className={`cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/resources")&& "text-black border-b-blue-600"}`}
-                    onClick={()=>navigate("/features")}>Feature</li>
                     <li  className={`cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/sign-in")&& "text-black border-b-blue-600"}`}
                     onClick={()=>navigate("/login")}>Login</li>
+                      <li  className={`cursor-pointer py-3 text-sm  font-semibold text-gray-500 border-b-[3px] border-b-transparent ${pathMathRoute("/sign-in")&& "text-black border-b-blue-600"}`}
+                    onClick={()=>navigate("/logout")}>Logout</li>
                     
                 </ul>
             </div>

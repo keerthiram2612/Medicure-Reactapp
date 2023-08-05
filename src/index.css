@@ -62,7 +62,8 @@ body{
   }
  .home-con{
   width: 500px;
-  margin:10px;
+  margin:-40px;
+
  }
  
  .swiper {
@@ -126,6 +127,11 @@ body{
   align-items: center;
   text-transform: uppercase;
   cursor: pointer;
+  transform:translateX(9px);
+  margin-top: 5px;
+}
+.home-con h1{
+ transition: .2s ease-in-out;
 }
 
 .home-con1{
@@ -208,4 +214,11 @@ text-decoration: none;
   border-radius:5px;
 
 
+}
+.resource{
+   height:100vh;
+   margin:0;
+   display: flex;
+   justify-content:center;
+   align-items:center;
 }
