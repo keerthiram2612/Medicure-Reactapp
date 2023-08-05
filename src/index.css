@@ -66,6 +66,7 @@ body{
 
  }
  
+ 
  .swiper {
   left: 0%;
   align-items: center;
@@ -87,6 +88,22 @@ body{
  }
  .cont-img{
    transform:translateY(-20%);
+ }
+ .speech{
+  transform: translateX(7%);
+ }
+ .container-resource{
+  transform: translateX(-150%);
+ }
+ .resource button{
+   transform: translateX(-40%);
+
+ }
+ .speech{
+  margin-left: -230px;
+ }
+ .container-resource p{
+  margin: 10px;
  }
  
 }
@@ -221,4 +238,102 @@ text-decoration: none;
    display: flex;
    justify-content:center;
    align-items:center;
+   border-radius: 10%;
+   background-color: lightblue;
+   margin-left: 250px;
+   margin-right: 250px;
+   margin-bottom: 250px;
+   margin-top: 250px;
+   
+}
+.resource button{
+  margin-left: -50px;
+  transform: translateX(-40%);
+  width: 150px;
+  height: 60px;
+}
+.speech{
+    display:flex;
+    margin-top: -60px;
+    margin-right: -260px;
+
+}
+.micro{
+  width: 190px;
+  background-color: lightblue;
+  
+}
+.btn1{
+  background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%);
+  margin: 10px;
+  padding: 13px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: flex;
+}
+
+.btn1:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.btn2{
+  background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%);
+  margin: 10px;
+  padding: 13px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn2:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.btn3{
+  background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%);
+  margin: 10px;
+  padding: 13px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn3:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.container-resource{
+   transform:translate(-420%,100%);
+   margin-top: 20px;
+   font-size:15px;
+}
+
+.container-resource p{
+  font-size:15px;
+  font-family: sans-serif;
+  text-decoration: underline;
+  text-transform: uppercase;
+  transform:translateX(220%);
+  white-space: nowrap;
+  margin-bottom: 20px;
+  
+
 }

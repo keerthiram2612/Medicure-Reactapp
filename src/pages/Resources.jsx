@@ -28,18 +28,18 @@ export default function Features() {
 
   return (
     <div className='resource'>
-      <div className='container'>
-        <button onClick={handleStartListening} disabled={isListening}>
+      <div className='speech'>
+        <button className="btn1"onClick={handleStartListening} disabled={isListening}>
           Start Listening
         </button>
-        <button onClick={handleStopListening} disabled={!isListening}>
+        <button  className="btn2"onClick={handleStopListening} disabled={!isListening}>
           Stop Listening
         </button>
-        <button onClick={handleClearText}>Clear</button>
+        <button className="btn3"onClick={handleClearText}>Clear</button>
       </div>
-      <div>
+      <div className='container-resource'>
         <p>Listening: {isListening ? 'ON' : 'OFF'}</p>
-        <p>Recognized Text: {recognizedText}</p>
+        <p className='content-res'>Recognized Text: {recognizedText}</p>
         <p></p>
       </div>
     </div>
