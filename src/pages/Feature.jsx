@@ -35,7 +35,7 @@ export default function Feature() {
         src={emergency}
         alt="Emergency Icon"
         onClick={handleEmergencyCall}
-        style={{ cursor: 'pointer' }}
+        style={{ cursor: 'pointer'}}
         
       />
        <button onClick={gotoResources}className='button1'>Prev</button>

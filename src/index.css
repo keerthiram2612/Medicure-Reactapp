@@ -456,15 +456,16 @@ li {
  }
  .swiper1{
   right: -40%;
-  margin-top: 20%;
+  margin-top: -20px;
   border-radius: 20px; 
-  height: 100vh;
+  
 
  }
  .swiper1 img{
-  transform: translateX(50%);
   border-radius:20px;
-  margin-bottom: 40px;
+  transform:translateX(-50%);
+  
+ 
  }
  .resources-container .contentWHO {
    margin-top: 80px;
@@ -475,14 +476,11 @@ li {
    white-space: nowrap;
    transform:translateX(40%);
  }
-  .product li{
-    visibility:hidden;
-  }
  .button3{
    transform:translateX(-320%);
    margin-top: 40px; 
  }
- 
+
 }
 .corona-img{
   margin-left: -350px;
@@ -525,6 +523,9 @@ a:hover {
   margin-left: 900px;
   justify-content:center;
  
+}
+.home-con1 .button3{
+  font-size: 15px;
 }
 .button2{
   width: 90px;
