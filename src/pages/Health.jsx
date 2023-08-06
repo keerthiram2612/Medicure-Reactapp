@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router'
 
 export default function Health
 () {
+    const gotoProduct=()=>{
+        navigate('/feature')
+    }
     const gotoResources=()=>{
      navigate('/resources')
     }
@@ -20,6 +23,7 @@ export default function Health
         </li>
         </ul>
         <button onClick={gotoResources}className='button2'>Prev</button>
+        <button  onClick={gotoProduct} className='button1'>Next</button>
     </div>
   )
 }
