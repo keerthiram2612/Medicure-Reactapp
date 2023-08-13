@@ -9,7 +9,7 @@ body{
     
 }
 .image-home img{
-   margin-left: 100px;
+  margin-left: 10px;
    border-radius: 20px;
    border: 2px solid black;
 }
@@ -67,6 +67,9 @@ body{
   border-color: none;
 }
 
+.h1-ben{
+  margin-left: 150px;
+}
 .login{
     width: 80px;
     height: 40px;
@@ -118,10 +121,26 @@ body{
   }.head{
     visibility: hidden;
   }
+  .image-home img{
+    margin-left: 40px;
+    margin-top: 55px;
+    
+ }
+ .h1-ben{
+  margin-top: 50px;
+  margin-left: 190px;
+  visibility: hidden;
+
+    }
+    .image-home p{
+      visibility: hidden;
+    }
+
   .list li{
     margin-left: -70px;
 
   }
+  
   .content{
     margin-top: 50px;
     transform: translateX(-75%);
@@ -213,9 +232,7 @@ position: fixed;
  .image-res img{
   visibility:hidden;
  }
- .resource p{
-
- }
+ 
  
 }
 @media (max-width:350px){
@@ -238,9 +255,7 @@ position: fixed;
         visibility: hidden;
 
     }
-    .logo{
-        
-    }
+    
     
 }
  /*home page*/
@@ -293,7 +308,7 @@ position: fixed;
   
 
 }
-.image-home
+
 .content{
   width: 500px;
   height: 200px;
@@ -543,6 +558,7 @@ li {
 
 }
 
+
  li {
    flex-direction: column;
  }
@@ -556,6 +572,7 @@ li {
   transform: translateX(50%);
   margin-bottom: 30px;
  }
+ 
  
  .button1{
   transform: translateX(-650%);
