@@ -23,7 +23,7 @@ const navigate = useNavigate();
    
   return (
     <div className='container'>
-      <button onClick={logoutHandler} className='logout'>Logout</button>
+
       <h1 className='home-con '>MediCure Applications which creates a knowledge about Ventilation and the uses during the pandemic situations.</h1>
       <h2 className='home-con1'>The Right ventilator for your environment
       <div className='content'>

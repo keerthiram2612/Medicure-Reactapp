@@ -51,7 +51,7 @@ return seterrorMessage('Invalid email or password');
           <span className="login100-form-logo">
             <i className="zmdi zmdi-landscape" />
           </span>
-          <span className="login100-form-title p-b-34 p-t-27">
+          <span className=" login100-form-title p-b-34 p-t-27">
             Log in
           </span>
           {errorMessage.length > 0 && <div style ={{marginBottom:'10px',color:'red'}}>{errorMessage}</div>}
