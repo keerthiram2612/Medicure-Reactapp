@@ -25,22 +25,16 @@ const navigate = useNavigate();
     <div className='container'>
 
       <h1 className='home-con '>MediCure Applications which creates a knowledge about Ventilation and the uses during the pandemic situations.</h1>
-      <h2 className='home-con1'>The Right ventilator for your environment
-      <div className='content'>
-        <p>Find the right ventilator to suit your clinical care Our devices offer <br/>
-           advanced  features to care for even the most complex patients,and <br/>
-           different levels of mobility for use on the go or where space is limited.</p></div></h2>
+       <div className="image-home">
+        <h1 className='ml-60'>Benefits</h1>
+        <img style={{width:"400px",height:"300px"}} className = "image-hm"src="https://hackster.imgix.net/uploads/attachments/1105626/OpenBuilds_Simple_Ventilator_Concept.spin.gif?auto=format%2Ccompress&gifq=35&w=400&h=300&fit=min" alt="" />
       <p>
-      </p>
-  
-      <button onClick={gotoProduct} className = "btn">next</button>
-      <div className='cont-img'>
-        <p>ventilation used during the panademic situations</p>
-         <Slider/>
-      
-         
-      </div>
-      
+      The low-cost, easy-to-build noninvasive ventilator performs<br/>
+similarly to a high-quality commercial device, with its open-<br/>
+source hardware description, which will allow for free<br/>
+replication and use in LMICs, facilitating application of this life-<br/>
+saving therapy to patients who otherwise could not be treated.</p><br/>
+       </div>
     </div>
   )
 }

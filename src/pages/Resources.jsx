@@ -24,7 +24,7 @@ const Resources = () => {
         <li>
           <a href="https://www.epa.gov/indoor-air-quality-iaq/coronavirus-covid-19-resources" target="_blank" rel="noopener noreferrer">EPA - Indoor Air Quality and COVID-19</a>
         </li>
-        {/* Add more resources here */}
+        {/* Added resources here */}
       </ul>
       <button  onClick={gotoProduct} className='button1'>Nextpage</button>
     </div>

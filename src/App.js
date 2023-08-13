@@ -8,6 +8,7 @@ import Resources from './pages/Resources';
 import Logout from './pages/Logout';
 import Health from './pages/Health';
 import Feature from './pages/Feature';
+import All from './pages/All';
 
 
 
@@ -32,6 +33,7 @@ function App() {
         <Route path = "/logout"element={<Logout/>}/>
         <Route path = "/health"element={<Health/>}/>
         <Route path = "/feature"element={<Feature/>}/>
+        <Route path = "/all"element={<All/>}/>
       </Routes>
      </Router>
     

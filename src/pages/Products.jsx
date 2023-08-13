@@ -1,36 +1,36 @@
 import React, { useState } from 'react'
 import Slider1 from './Slider1';
+import {useNavigate} from 'react-router';
  
 
 
 export default function Products() {
+    const gotoProduct=()=>{
+     navigate('/all');
+    }
+    const navigate = useNavigate();
   return (
-    <div className='container'>
-      <h1 className='home-con '>MediCure Applications which creates a knowledge about Ventilation and the uses during the pandemic situations.</h1>
+    <div className='container-prod'>
+      <h1 className='home-con '>Products</h1>
       <h2 className='home-con1'> 
-      <li className='button3'>All</li>
-        <li className='button3'>ICU</li>
-        <li className='button3'>PICU/NICU</li>
-        <li className='button3'>Transport</li>
-        <li className='button3'>MRI suite</li>
-      <div className='content'>
-        <p>A ventilator is a device that supports or recreates the process of breathing<br/>
-         by pumping air into the lungs. Sometimes, people refer to it as a <br/>
-         vent or breathing machine.Doctors use ventilators if a person cannot breathe<br/>
-         adequately on their own. This may be because they are undergoing general<br/>
-          anesthesia or have an illness that affects their breathing.
+      <div className="list-prod">
+      <li onClick={gotoProduct}className='button3 cursor-pointer'>All</li>
+        <li className='button3 cursor-pointer'>ICU</li>
+        <li className='button3 cursor-pointer'>PICU</li>
+        <li className='button3 cursor-pointer'>Transport</li>
+        <li className='button3 cursor-pointer'>MRI suite</li>
+        </div>
+      <div className='image-home'>
+        <p>A ventilator is a device that supports or recreates<br/>
+          the process of breathing  by pumping air into the lungs<br/>
+        . Sometimes, people refer to it as a vent or breathing <br/>
+          machine.Doctors use ventilators if a person cannot <br/>
+          breathe adequately on their own.<br/>
 
 </p></div></h2>
       <p>
       </p>
-  
-      
-      <div className='cont-img'>
-        <p>ventilation used during the panademic situations</p>
-         <Slider1/>
-      
-         
-      </div>
+
       
     </div>
   )
