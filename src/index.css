@@ -9,10 +9,11 @@ body{
     
 }
 .image-home img{
-  margin-left: 10px;
+  margin-left: 70px;
    border-radius: 20px;
    border: 2px solid black;
 }
+
 .image-home p{
   margin-left: 690px;
   margin-top: -250px;
@@ -22,10 +23,9 @@ body{
   text-align: center;
   border: #007bff solid 2px;
   color: black;
-  
-
  
 }
+
 .limiter{
   width: 450px;
   height: 300px;
@@ -88,7 +88,7 @@ body{
 }
 .container-prod .image-home{
   margin-top: 200px;
-  margin-left: -650px;
+  margin-left: -550px;
 }
 @media (max-width:650px){
   .limiter{
